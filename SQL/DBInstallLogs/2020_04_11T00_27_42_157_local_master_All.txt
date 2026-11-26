@@ -1,0 +1,18 @@
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-04-11 00:27:42.430   Server: MININT-CICJ801   Database: master
+LoginName: REDMOND\v-momah2   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Database\CreateDatabase.sql" 
+2020-04-11 00:27:42.667   Server: MININT-CICJ801   Database: master
+LoginName: REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+KILL 53
+TU database droped and recreated.
+::::: Executed Successfully. 

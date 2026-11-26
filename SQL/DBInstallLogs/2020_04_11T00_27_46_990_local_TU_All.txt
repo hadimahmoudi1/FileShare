@@ -1,0 +1,134 @@
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-04-11 00:27:47.217   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Tables\Tables_Indexes.sql" 
+2020-04-11 00:27:47.403   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-04-11 00:27:48.230   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-04-11 00:27:48.437   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\DataLoad1\Load_Excahnge.sql" 
+2020-04-11 00:27:48.627   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+[TU].[dbo].[Exchanges] loaded Successfully.
+::::: Executed Successfully. 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-04-11 00:27:49.043   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-04-11 00:27:49.260   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-04-11 00:27:49.480   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prGetActiveStockSymbols.sql" 
+2020-04-11 00:27:49.680   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prInsertStock.sql" 
+2020-04-11 00:27:50.100   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prInsertStockData.sql" 
+2020-04-11 00:27:50.510   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prInsertStockDataXML.sql" 
+2020-04-11 00:27:50.957   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prUpdateStatus.sql" 
+2020-04-11 00:27:51.390   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prUpdateStatusId.sql" 
+2020-04-11 00:27:51.823   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\prUpdateStockSymbol.sql" 
+2020-04-11 00:27:52.190   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-04-11 00:27:52.617   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Views\vStockData.sql" 
+2020-04-11 00:27:52.823   Server: MININT-CICJ801   Database: TU   LoginName:
+REDMOND\v-momah2   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 

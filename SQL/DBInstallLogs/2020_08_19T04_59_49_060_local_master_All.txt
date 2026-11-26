@@ -1,0 +1,17 @@
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-08-19 04:59:49.370   Server: HADIL1   Database: master   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Database\CreateDatabase.sql" 
+2020-08-19 04:59:49.647   Server: HADIL1   Database: master   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+TU database droped and recreated.
+::::: Executed Successfully. 

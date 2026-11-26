@@ -1,0 +1,134 @@
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-08-19 04:59:54.367   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Tables\Tables_Indexes.sql" 
+2020-08-19 04:59:54.490   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-08-19 04:59:55.070   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-08-19 04:59:55.237   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\DataLoad1\Load_Excahnge.sql" 
+2020-08-19 04:59:55.437   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+[TU].[dbo].[Exchanges] loaded Successfully.
+::::: Executed Successfully. 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-08-19 04:59:56.030   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-08-19 04:59:56.330   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-08-19 04:59:56.513   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prGetActiveStockSymbols.sql" 
+2020-08-19 04:59:56.893   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prInsertStock.sql" 
+2020-08-19 04:59:57.307   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prInsertStockData.sql" 
+2020-08-19 04:59:57.823   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prInsertStockDataXML.sql" 
+2020-08-19 04:59:58.210   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prUpdateStatus.sql" 
+2020-08-19 04:59:58.567   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\dbo.prUpdateStatusId.sql" 
+2020-08-19 04:59:58.870   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Sprocs\prUpdateStockSymbol.sql" 
+2020-08-19 04:59:59.207   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 
+ 
+=========================================================== 
+=========================================================== 
+Folder:  
+2020-08-19 04:59:59.617   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+=========================================================== 
+=========================================================== 
+ 
+ 
+---------------------------------------------------------------------- 
+Script: ".\Views\vStockData.sql" 
+2020-08-19 04:59:59.787   Server: HADIL1   Database: TU   LoginName:
+MicrosoftAccount\hadimahmoudi@hotmail.com   DatabaseUserName: dbo
+---------------------------------------------------------------------- 
+::::: Executed Successfully. 

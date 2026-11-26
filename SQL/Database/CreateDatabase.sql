@@ -1,0 +1,169 @@
+/**************************************************
+File Name:     
+
+Description:   Creates TU.
+				First the process kills all processes that connects to TU.
+				Then it drops the database and recreates it.
+
+Assert:        
+
+Comments:      
+
+Input Parameters:        
+
+Returns:        
+
+Author(s):Hadi Mahmoudi  (hadimahmoudi@hotmail.com) www.darbod.com
+
+Revision History:
+
+[ 0]  Date:		By:		Version:	Action:
+[ 1]  4/28/2011	Hadi		1.000		Initial design.
+
+**************************************************/
+
+--Kill all processes.
+
+DECLARE @DatabaseName nvarchar(50)
+DECLARE @SPId int
+DECLARE @SQL nvarchar(100)
+
+SET @DatabaseName = N'TU'
+--SET @DatabaseName = DB_NAME()
+DECLARE my_cursor CURSOR FAST_FORWARD FOR
+SELECT SPId FROM MASTER..SysProcesses
+WHERE DBId = DB_ID(@DatabaseName) AND SPId <> @@SPId
+
+OPEN my_cursor
+
+FETCH NEXT FROM my_cursor INTO @SPId
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+BEGIN TRY
+ SET @SQL = 'KILL ' + CAST(@SPId as nvarchar(10))
+ print @SQL
+ EXEC sp_executeSQL @SQL
+ --KILL @SPId -- Causing Incorrect syntax near '@spid'.
+ END TRY
+ BEGIN CATCH
+ END CATCH
+ FETCH NEXT FROM my_cursor INTO @SPId
+END
+
+CLOSE my_cursor
+DEALLOCATE my_cursor 
+
+
+USE [master]
+GO
+
+/****** Object:  Database [TU]    Script Date: 04/28/2011 15:53:57 ******/
+IF  EXISTS (SELECT name FROM sys.databases WHERE name = N'TU')
+DROP DATABASE [TU]
+GO
+
+USE [master]
+GO
+
+/****** Object:  Database [TU]    Script Date: 04/28/2011 15:53:57 ******/
+CREATE DATABASE [TU] ON  PRIMARY 
+( NAME = N'TU', FILENAME = N'c:\TUData\TU.mdf' , SIZE = 20480KB , MAXSIZE = UNLIMITED, FILEGROWTH = 30% )
+ LOG ON 
+( NAME = N'TU_log', FILENAME = N'c:\TUData\TU_log.ldf' , SIZE = 26752KB , MAXSIZE = 2048GB , FILEGROWTH = 30%)
+GO
+
+ALTER DATABASE [TU] SET COMPATIBILITY_LEVEL = 100
+GO
+
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [TU].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+
+ALTER DATABASE [TU] SET ANSI_NULL_DEFAULT OFF 
+GO
+
+ALTER DATABASE [TU] SET ANSI_NULLS OFF 
+GO
+
+ALTER DATABASE [TU] SET ANSI_PADDING OFF 
+GO
+
+ALTER DATABASE [TU] SET ANSI_WARNINGS OFF 
+GO
+
+ALTER DATABASE [TU] SET ARITHABORT OFF 
+GO
+
+ALTER DATABASE [TU] SET AUTO_CLOSE OFF 
+GO
+
+ALTER DATABASE [TU] SET AUTO_CREATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [TU] SET AUTO_SHRINK OFF 
+GO
+
+ALTER DATABASE [TU] SET AUTO_UPDATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [TU] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+
+ALTER DATABASE [TU] SET CURSOR_DEFAULT  GLOBAL 
+GO
+
+ALTER DATABASE [TU] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+
+ALTER DATABASE [TU] SET NUMERIC_ROUNDABORT OFF 
+GO
+
+ALTER DATABASE [TU] SET QUOTED_IDENTIFIER OFF 
+GO
+
+ALTER DATABASE [TU] SET RECURSIVE_TRIGGERS OFF 
+GO
+
+ALTER DATABASE [TU] SET  DISABLE_BROKER 
+GO
+
+ALTER DATABASE [TU] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+
+ALTER DATABASE [TU] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+
+ALTER DATABASE [TU] SET TRUSTWORTHY OFF 
+GO
+
+ALTER DATABASE [TU] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+
+ALTER DATABASE [TU] SET PARAMETERIZATION SIMPLE 
+GO
+
+ALTER DATABASE [TU] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+
+ALTER DATABASE [TU] SET HONOR_BROKER_PRIORITY OFF 
+GO
+
+ALTER DATABASE [TU] SET  READ_WRITE 
+GO
+
+ALTER DATABASE [TU] SET RECOVERY FULL 
+GO
+
+ALTER DATABASE [TU] SET  MULTI_USER 
+GO
+
+ALTER DATABASE [TU] SET PAGE_VERIFY CHECKSUM  
+GO
+
+ALTER DATABASE [TU] SET DB_CHAINING OFF 
+GO
+PRINT 'TU database droped and recreated.'
+
